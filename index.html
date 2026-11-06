@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micro:bit Alerta Social | Detección Temprana de Vulnerabilidad Socioeconómica</title>
+  <meta name="description" content="Dispositivo inteligente basado en Micro:bit para la detección temprana de vulnerabilidad socioeconómica con pleno consentimiento del usuario. Inspirado en tecnología de monitoreo y asistencia directa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e20613'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+</head>
+<body>
+
+  <!-- Top Emergency & Verisure-Style Trust Bar -->
+  <aside class="top-banner" aria-label="Información institucional">
+    <div class="container top-banner__inner">
+      <div class="top-banner__item">
+        <span class="badge-pulse"></span>
+        <span>Tecnología Preventiva con <strong>Consentimiento del Usuario</strong></span>
+      </div>
+      <div class="top-banner__actions">
+        <span class="top-banner__school">Colegio Fasta San Vicente de Paúl &bull; TI 2026</span>
+        <a href="#simulador" class="top-banner__link">Probar Simulador en Vivo &rarr;</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#inicio" class="brand-logo" aria-label="Volver al inicio">
+        <div class="brand-logo__symbol">
+          <span class="brand-logo__dot red"></span>
+          <span class="brand-logo__dot dark"></span>
+        </div>
+        <div class="brand-logo__text">
+          <span class="brand-logo__main">MICRO:BIT</span>
+          <span class="brand-logo__sub">ALERTA SOCIAL</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu matching Wireframe (INICIO - PROBLEMÁTICA - PROYECTO - INSTRUCTIVO) -->
+      <nav class="nav-menu" id="navMenu" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#inicio" class="nav-link active">INICIO</a></li>
+          <li class="nav-item"><a href="#problematica" class="nav-link">PROBLEMÁTICA</a></li>
+          <li class="nav-item"><a href="#proyecto" class="nav-link">PROYECTO</a></li>
+          <li class="nav-item"><a href="#instructivo" class="nav-link">INSTRUCTIVO</a></li>
+          <li class="nav-item"><a href="#simulador" class="nav-link">SIMULADOR</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#contacto" class="btn btn-verisure-outline header-btn">Contacto</a>
+        <a href="#simulador" class="btn btn-verisure header-btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.8 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
+          </svg>
+          Activar Alerta
+        </a>
+        <!-- Mobile hamburger toggle -->
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION (Based on the Hand-Drawn Wireframe) -->
+    <section class="hero-section" id="inicio">
+      <div class="hero-background-shapes">
+        <div class="shape-blob shape-1"></div>
+        <div class="shape-blob shape-2"></div>
+      </div>
+
+      <div class="container hero-container">
+        <!-- Hero Header Text (Wireframe Title + Slogan) -->
+        <div class="hero-header-block">
+          <div class="hero-trust-tag">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e20613">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+            </svg>
+            <span>PROYECTO INTEGRADOR TECNOLOGÍA DE LA INFORMACIÓN 2026</span>
+          </div>
+
+          <h1 class="hero-main-title">
+            <span class="highlight-text">MICROBIT</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            “Detección temprana de vulnerabilidad socioeconómica con consentimiento del usuario”
+          </p>
+
+          <p class="hero-description">
+            Un sistema doméstico no invasivo diseñado para identificar la pérdida de servicios esenciales (electricidad y calefacción) y conectar a familias en riesgo con oportunidades de empleo digno a través del Ministerio de Trabajo.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#simulador" class="btn btn-verisure btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon>
+              </svg>
+              Probar Prototipo Interactivo
+            </a>
+            <a href="#problematica" class="btn btn-secondary btn-lg">Conocer la Problemática</a>
+          </div>
+
+          <!-- Trust Badges Bar inspired by Verisure -->
+          <div class="hero-stats-row">
+            <div class="hero-stat-card">
+              <span class="hero-stat-number">100%</span>
+              <span class="hero-stat-label">Soberanía y Consentimiento</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-card">
+              <span class="hero-stat-number">14 Días</span>
+              <span class="hero-stat-label">Ventana de confirmación</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-card">
+              <span class="hero-stat-number">2 Sensores</span>
+              <span class="hero-stat-label">Luz ambiental y Temperatura</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-card">
+              <span class="hero-stat-number">0 Costo</span>
+              <span class="hero-stat-label">Hardware de bajo costo y accesible</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wireframe "FOTO" Hero Showcase Area -->
+        <div class="hero-photo-showcase" id="foto-section">
+          <div class="showcase-card">
+            <div class="showcase-badge">
+              <span class="status-indicator"></span>
+              Prototipo Operativo 2026
+            </div>
+
+            <div class="showcase-image-wrapper">
+              <img src="assets/microbit_device.jpg" alt="Dispositivo Micro:bit de detección de vulnerabilidad instalado en hogar" class="showcase-img" id="heroDeviceImg" loading="eager">
+              <div class="showcase-overlay-hotspots">
+                <div class="hotspot hotspot-sensor" data-tooltip="Sensor de Temperatura y Luminosidad integrado">
+                  <span class="hotspot-pulse"></span>
+                  <span class="hotspot-label">Sensores Integrados</span>
+                </div>
+                <div class="hotspot hotspot-leds" data-tooltip="Matriz LED 5x5: Muestra alerta emocional con cara triste">
+                  <span class="hotspot-pulse"></span>
+                  <span class="hotspot-label">Pantalla 5x5 LED</span>
+                </div>
+                <div class="hotspot hotspot-alarm" data-tooltip="LED indicador externo de alerta activa (Pin P0)">
+                  <span class="hotspot-pulse red"></span>
+                  <span class="hotspot-label">LED Alarma P0</span>
+                </div>
+                <div class="hotspot hotspot-buttons" data-tooltip="Botones A y B para confirmación o cancelación soberana">
+                  <span class="hotspot-pulse"></span>
+                  <span class="hotspot-label">Botón A (Sí) / B (No)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="showcase-caption">
+              <div class="showcase-caption__info">
+                <h4>Dispositivo Micro:bit de Monitoreo Térmico y Lumínico</h4>
+                <p>Equipado con matriz indicadora 5x5, circuito resistor con LED rojo y pulsadores de confirmación ciudadana.</p>
+              </div>
+              <div class="showcase-caption__cta">
+                <a href="#simulador" class="btn btn-sm btn-verisure">Interactuar con el simulador &darr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Wireframe Bottom Feature Cards (Directly underneath FOTO as sketched in notebook) -->
+        <div class="wireframe-bottom-cards">
+          <div class="feature-card">
+            <div class="feature-card__icon red">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Sensores de Luz y Clima</h3>
+            <p class="feature-card__text">Detecta corte continuo de energía eléctrica y temperaturas extremas (invierno frío o verano sofocante).</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon dark">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Algoritmo de 14 Días</h3>
+            <p class="feature-card__text">Evita falsos positivos: evalúa un lapso estimado de 2 semanas de carencia de servicios básicos en el hogar.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon red">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Consentimiento Expreso</h3>
+            <p class="feature-card__text">La persona decide soberanamente con el <strong>Botón A</strong> si desea pedir auxilio laboral, o <strong>Botón B</strong> si cancela.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon dark">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Solución de Fondo</h3>
+            <p class="feature-card__text">No es asistencialismo pasivo: conecta con el Ministerio de Trabajo con ofertas laborales para salir de la pobreza.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: PROBLEMÁTICA & ESTADÍSTICAS (Direct from PDF) -->
+    <section class="section problem-section" id="problematica">
+      <div class="container">
+        <div class="section-badge">LINEAMIENTO TI &bull; DIAGNÓSTICO SOCIAL</div>
+        <h2 class="section-title">La Problemática: Superación de la Pobreza Estructural</h2>
+        <p class="section-subtitle">
+          Bajo el lineamiento de <em>“Empleo digno y Formación de oficios”</em>, abordamos la falta de ingresos que impide a las familias costear servicios esenciales como la luz y el gas.
+        </p>
+
+        <div class="problem-grid">
+          <!-- Left Column: Context & INDEC Data -->
+          <div class="problem-narrative">
+            <div class="verisure-callout">
+              <div class="callout-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="#e20613">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.8 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                </svg>
+              </div>
+              <div class="callout-content">
+                <h3>El Desafío en los Hogares Argentinos</h3>
+                <p>
+                  Pudimos detectar graves problemas en la economía doméstica por falta de empleos dignos, derivando en la imposibilidad material de solventar las tarifas de electricidad o gas natural.
+                </p>
+              </div>
+            </div>
+
+            <div class="quote-card">
+              <blockquote>
+                “La pobreza en Argentina registró una baja situándose en <strong>28,2% de la población</strong> durante el segundo semestre (13,5 millones de personas afectadas), y <strong>26,9% en el tercer trimestre de 2025</strong> según datos de INDEC y Ministerio de Capital Humano.”
+              </blockquote>
+              <cite>— Fuente oficial INDEC & Consejo Nacional de Coordinación de Políticas Sociales (CNCPS)</cite>
+            </div>
+
+            <div class="key-facts-list">
+              <div class="fact-item">
+                <span class="fact-dot"></span>
+                <div>
+                  <strong>21,0% de los hogares</strong> se encuentran por debajo de la Línea de Pobreza (LP), abarcando a 8.474.000 personas.
+                </div>
+              </div>
+              <div class="fact-item">
+                <span class="fact-dot"></span>
+                <div>
+                  <strong>4,8% de los hogares</strong> están bajo la Línea de Indigencia (LI), lo que representa a 1.884.000 personas sin cobertura alimentaria elemental.
+                </div>
+              </div>
+              <div class="fact-item">
+                <span class="fact-dot"></span>
+                <div>
+                  <strong>Objetivo del proyecto:</strong> Crear una red de alerta temprana que evite intermediarios y focalice la ayuda directamente en empleo digno.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Statistical Chart based on Page 3 PDF -->
+          <div class="problem-chart-wrapper">
+            <div class="chart-header">
+              <h4>Evolución de la Pobreza e Indigencia en Argentina</h4>
+              <span class="chart-tag">Datos INDEC 2023 - 2025</span>
+            </div>
+
+            <div class="bar-chart-container" id="barChart">
+              <!-- Bar 1: 2023 T1 -->
+              <div class="chart-col">
+                <div class="chart-col__bars">
+                  <div class="bar bar-poverty" style="height: 38.7%;" data-val="38.7%">
+                    <span class="bar-tooltip">Pobreza: 38.7%</span>
+                  </div>
+                  <div class="bar bar-indigence" style="height: 8.9%;" data-val="8.9%">
+                    <span class="bar-tooltip">Indigencia: 8.9%</span>
+                  </div>
+                </div>
+                <span class="chart-label">T1 23</span>
+              </div>
+
+              <!-- Bar 2: 2023 T2 -->
+              <div class="chart-col">
+                <div class="chart-col__bars">
+                  <div class="bar bar-poverty" style="height: 41.5%;" data-val="41.5%">
+                    <span class="bar-tooltip">Pobreza: 41.5%</span>
+                  </div>
+                  <div class="bar bar-indigence" style="height: 9.7%;" data-val="9.7%">
+                    <span class="bar-tooltip">Indigencia: 9.7%</span>
+                  </div>
+                </div>
+                <span class="chart-label">T2 23</span>
+              </div>
+
+              <!-- Bar 3: 2024 T1 (Peak 54.8%) -->
+              <div class="chart-col highlight-col">
+                <div class="chart-col__bars">
+                  <div class="bar bar-poverty peak" style="height: 54.8%;" data-val="54.8%">
+                    <span class="bar-tooltip">Pico Histórico: 54.8%</span>
+                    <span class="bar-badge">Pico</span>
+                  </div>
+                  <div class="bar bar-indigence" style="height: 20.2%;" data-val="20.2%">
+                    <span class="bar-tooltip">Indigencia: 20.2%</span>
+                  </div>
+                </div>
+                <span class="chart-label">T1 24</span>
+              </div>
+
+              <!-- Bar 4: 2024 T3 -->
+              <div class="chart-col">
+                <div class="chart-col__bars">
+                  <div class="bar bar-poverty" style="height: 38.3%;" data-val="38.3%">
+                    <span class="bar-tooltip">Pobreza: 38.3%</span>
+                  </div>
+                  <div class="bar bar-indigence" style="height: 9.2%;" data-val="9.2%">
+                    <span class="bar-tooltip">Indigencia: 9.2%</span>
+                  </div>
+                </div>
+                <span class="chart-label">T3 24</span>
+              </div>
+
+              <!-- Bar 5: 2025 T2 -->
+              <div class="chart-col">
+                <div class="chart-col__bars">
+                  <div class="bar bar-poverty" style="height: 31.8%;" data-val="31.8%">
+                    <span class="bar-tooltip">Pobreza: 31.8%</span>
+                  </div>
+                  <div class="bar bar-indigence" style="height: 6.9%;" data-val="6.9%">
+                    <span class="bar-tooltip">Indigencia: 6.9%</span>
+                  </div>
+                </div>
+                <span class="chart-label">T2 25</span>
+              </div>
+
+              <!-- Bar 6: 2025 T3 (Current 26.9%) -->
+              <div class="chart-col current-col">
+                <div class="chart-col__bars">
+                  <div class="bar bar-poverty current" style="height: 26.9%;" data-val="26.9%">
+                    <span class="bar-tooltip">Actual: 26.9%</span>
+                    <span class="bar-badge green">Hoy</span>
+                  </div>
+                  <div class="bar bar-indigence" style="height: 6.0%;" data-val="6.0%">
+                    <span class="bar-tooltip">Indigencia: 6.0%</span>
+                  </div>
+                </div>
+                <span class="chart-label">T3 25</span>
+              </div>
+            </div>
+
+            <!-- Legend -->
+            <div class="chart-legend">
+              <div class="legend-item">
+                <span class="legend-color poverty"></span>
+                <span>Pobreza General (%)</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-color indigence"></span>
+                <span>Indigencia Extrema (%)</span>
+              </div>
+            </div>
+
+            <div class="chart-footer-note">
+              Gráfico interactivo reproducido de la bitácora escolar a partir de los informes trimestrales oficiales de Capital Humano e INDEC.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PROYECTO & ARQUITECTURA TECNOLÓGICA (From PDF) -->
+    <section class="section project-section" id="proyecto">
+      <div class="container">
+        <div class="section-badge">DISEÑO Y COMPONENTES</div>
+        <h2 class="section-title">El Dispositivo Micro:bit: Sensores y Actuadores</h2>
+        <p class="section-subtitle">
+          Hardware libre, de bajo consumo eléctrico y alta confiabilidad. Cada elemento ha sido seleccionado y justificado meticulosamente para asegurar precisión sin invadir la privacidad doméstica.
+        </p>
+
+        <!-- Components Grid -->
+        <div class="components-grid">
+          <!-- Card 1 -->
+          <div class="component-card">
+            <div class="component-card__header">
+              <div class="component-icon red">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                </svg>
+              </div>
+              <span class="component-type">Sensor Entrada</span>
+            </div>
+            <h3>Sensor de Luz Integrado</h3>
+            <p class="component-desc">
+              Utiliza la matriz de diodos del Micro:bit para medir la luminosidad ambiental en un rango de 0 a 255.
+            </p>
+            <div class="component-spec">
+              <strong>Umbral Crítico:</strong> <code>Nivel de Luz &le; 20</code> (indica corte prolongado o falta de iluminación eléctrica).
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="component-card">
+            <div class="component-card__header">
+              <div class="component-icon blue">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>
+                </svg>
+              </div>
+              <span class="component-type">Sensor Entrada</span>
+            </div>
+            <h3>Sensor de Temperatura</h3>
+            <p class="component-desc">
+              Mide los grados Celsius en el núcleo del microprocesador para deducir las condiciones térmicas de la vivienda.
+            </p>
+            <div class="component-spec">
+              <strong>Umbral Crítico:</strong> <code>&lt; 10°C</code> (sin calefacción en invierno) ó <code>&gt; 35°C</code> (sin ventilación en verano).
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="component-card">
+            <div class="component-card__header">
+              <div class="component-icon dark">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+              </div>
+              <span class="component-type">Actuador Visual</span>
+            </div>
+            <h3>Matriz LED 5x5 Incorporada</h3>
+            <p class="component-desc">
+              Muestra un icono facial expresivo. Cuando se constatan 14 días sin condiciones normales, proyecta una <strong>cara triste (☹)</strong>.
+            </p>
+            <div class="component-spec">
+              <strong>Función:</strong> Alerta visual empática que solicita la atención y confirmación de los miembros del hogar.
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="component-card highlight">
+            <div class="component-card__header">
+              <div class="component-icon red-glow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <circle cx="12" cy="12" r="8"></circle>
+                </svg>
+              </div>
+              <span class="component-type">Actuador Pin P0</span>
+            </div>
+            <h3>Luz LED Externa de Alarma</h3>
+            <p class="component-desc">
+              Conectada mediante cable a la protoboard y al pin digital <code>P0</code> con resistencia limitadora de corriente.
+            </p>
+            <div class="component-spec">
+              <strong>Acción:</strong> <code>digital write pin P0 to 1</code>. Se enciende en conjunto con la cara triste como señal de alerta visible.
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="component-card">
+            <div class="component-card__header">
+              <div class="component-icon green">
+                <span class="btn-letter">A</span>
+              </div>
+              <span class="component-type">Pulsador A</span>
+            </div>
+            <h3>Botón A: Confirmación (SÍ)</h3>
+            <p class="component-desc">
+              Permite a la persona confirmar voluntariamente su situación de vulnerabilidad ante la alerta.
+            </p>
+            <div class="component-spec">
+              <strong>Efecto en pantalla:</strong> Despliega el texto <code>"Env."</code> (Enviado al Ministerio de Trabajo).
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="component-card">
+            <div class="component-card__header">
+              <div class="component-icon gray">
+                <span class="btn-letter">B</span>
+              </div>
+              <span class="component-type">Pulsador B</span>
+            </div>
+            <h3>Botón B: Cancelación (NO)</h3>
+            <p class="component-desc">
+              Garantiza el derecho a no ser asistido o descarta falsas alarmas (por ejemplo, vacaciones o corte breve).
+            </p>
+            <div class="component-spec">
+              <strong>Efecto en pantalla:</strong> Despliega <code>"Cancel."</code> y reinicia el ciclo de monitoreo en cero.
+            </div>
+          </div>
+        </div>
+
+        <!-- Future Projection Banner (From Page 7 of PDF) -->
+        <div class="future-vision-box">
+          <div class="future-vision__content">
+            <span class="vision-tag">PROYECCIÓN A FUTURO &bull; SISTEMA SEMÁFORO</span>
+            <h3>Evolución hacia Alerta Escalonada Tricolor</h3>
+            <p>
+              Tal como proyectamos en la bitácora escolar, el dispositivo incorporará tres niveles LED:
+              <strong>Verde</strong> (Condiciones óptimas o estables), <strong>Amarillo</strong> (Vulnerabilidad incipiente / 7 días en riesgo) y <strong>Rojo</strong> (Emergencia crítica / 14 días sin servicios básicos). Esto permitirá a los organismos sociales priorizar la urgencia de las cuadrillas de asistencia y capacitación de oficios.
+            </p>
+          </div>
+          <div class="traffic-light-demo">
+            <div class="traffic-lamp green active" title="Estado Verde: Condiciones Normales"></div>
+            <div class="traffic-lamp yellow active" title="Estado Amarillo: Alerta Preventiva"></div>
+            <div class="traffic-lamp red active pulse" title="Estado Rojo: Emergencia Confirmada"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: INSTRUCTIVO & PROTOCOLO (Step-by-step from PDF) -->
+    <section class="section protocol-section" id="instructivo">
+      <div class="container">
+        <div class="section-badge">PROTOCOLO DE ACCIÓN</div>
+        <h2 class="section-title">Instructivo de Funcionamiento Paso a Paso</h2>
+        <p class="section-subtitle">
+          El proceso garantiza respeto a la dignidad y privacidad familiar, sin cámaras ni micrófonos, priorizando siempre la voluntad del usuario.
+        </p>
+
+        <div class="steps-timeline">
+          <!-- Step 1 -->
+          <div class="timeline-step">
+            <div class="step-number">01</div>
+            <div class="step-card">
+              <div class="step-header">
+                <h4>Monitoreo Pasivo y Respetuoso</h4>
+                <span class="step-time">Día 1 al 13</span>
+              </div>
+              <p>
+                El Micro:bit se ubica en el área principal de la vivienda. Monitorea continuamente los niveles de luz natural/artificial y la temperatura ambiente. No almacena datos personales ni audio.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-step">
+            <div class="step-number">02</div>
+            <div class="step-card">
+              <div class="step-header">
+                <h4>Detección de Anomalía Crítica</h4>
+                <span class="step-time">Día 14 (2 Semanas)</span>
+              </div>
+              <p>
+                Si durante 14 días consecutivos se detecta oscuridad constante (<code>luz &le; 20</code>) o frío extremo / calor desmedido (<code>temp &lt; 10°C</code> o <code>&gt; 35°C</code>), el contador interno activa el protocolo de alerta.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-step">
+            <div class="step-number">03</div>
+            <div class="step-card">
+              <div class="step-header">
+                <h4>Alerta Visual Empática</h4>
+                <span class="step-time">En pantalla</span>
+              </div>
+              <p>
+                En la matriz 5x5 se proyecta de forma luminosa una <strong>cara triste (☹)</strong> y se enciende el <strong>LED rojo de alarma en P0</strong>. El robot invita al usuario a validar su situación.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-step">
+            <div class="step-number">04</div>
+            <div class="step-card">
+              <div class="step-header">
+                <h4>Soberanía del Usuario: Botón A o B</h4>
+                <span class="step-time">Interacción</span>
+              </div>
+              <p>
+                El ciudadano elige libremente:
+                <br>&bull; <strong>Presionar Botón A:</strong> Confirma la necesidad. Muestra <code>"Env."</code>.
+                <br>&bull; <strong>Presionar Botón B:</strong> Descarta la alerta. Muestra <code>"Cancel."</code> y resetea.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="timeline-step highlight-step">
+            <div class="step-number">05</div>
+            <div class="step-card">
+              <div class="step-header">
+                <h4>Articulación con Ministerio de Trabajo</h4>
+                <span class="step-time">Intervención</span>
+              </div>
+              <p>
+                Ante la confirmación positiva, el estado recibe el aviso georreferenciado y envía promotores sociales para acercar <strong>propuestas concretas de empleo digno</strong> y capacitación de oficios, resolviendo la raíz del problema socioeconómico.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Block Code & MakeCode Link Section (From Page 6 of PDF) -->
+        <div class="makecode-showcase-box">
+          <div class="makecode-showcase__info">
+            <div class="code-tag">MICRO:BIT MAKECODE CODEBASE</div>
+            <h3>Lógica de Bloques del Dispositivo</h3>
+            <p>
+              Programado en la plataforma oficial de Microsoft MakeCode for Micro:bit. El código evalúa de manera reiterada (bucle <code>forever</code>) los parámetros ambientales e incrementa la variable <code>dias</code> ante condiciones de desamparo.
+            </p>
+            <ul class="code-features-list">
+              <li><code>on start</code>: Inicializa <code>dias = 0</code> y <code>diasSinCondicionesNormales = 0</code>.</li>
+              <li><code>forever</code>: Si <code>light level &le; 20</code> o <code>temp &lt; 10</code> o <code>temp &gt; 35</code>: incrementa días.</li>
+              <li>Si <code>dias &ge; 14</code>: <code>show leds (☹)</code> y <code>digital write pin P0 to 1</code>.</li>
+              <li><code>on button A pressed</code>: <code>show string "Env."</code>.</li>
+              <li><code>on button B pressed</code>: <code>show string "Cancel."</code>.</li>
+            </ul>
+
+            <div class="makecode-links">
+              <a href="https://makecode.microbit.org/_c4oE2JAb2X5e" target="_blank" rel="noopener noreferrer" class="btn btn-verisure">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                </svg>
+                Abrir en Microsoft MakeCode Oficial
+              </a>
+              <span class="repo-hash">Código: <code>_c4oE2JAb2X5e</code></span>
+            </div>
+          </div>
+
+          <div class="makecode-showcase__preview">
+            <div class="code-terminal">
+              <div class="terminal-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="terminal-title">microbit-vulnerabilidad.js (MakeCode)</span>
+              </div>
+              <pre class="terminal-content"><code>let dias = 0
+let diasSinCondicionesNormales = 0
+
+basic.forever(function () {
+    let luz = input.lightLevel()
+    let temp = input.temperature()
+    
+    if (luz <= 20 || temp < 10 || temp > 35) {
+        dias += 1
+    }
+    
+    if (dias >= 14) {
+        basic.showLeds(`
+            . . . . .
+            . # . # .
+            . . . . .
+            . # # # .
+            # . . . #
+        `)
+        pins.digitalWritePin(DigitalPin.P0, 1)
+    }
+})
+
+input.onButtonPressed(Button.A, function () {
+    basic.showString("Env.")
+    // Confirmación enviada a asistencia social
+})
+
+input.onButtonPressed(Button.B, function () {
+    basic.showString("Cancel.")
+    dias = 0
+    pins.digitalWritePin(DigitalPin.P0, 0)
+    basic.clearScreen()
+})</code></pre>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: LIVE INTERACTIVE SIMULATOR (Verisure Test Style) -->
+    <section class="section simulator-section" id="simulador">
+      <div class="container">
+        <div class="section-badge">LABORATORIO EN VIVO</div>
+        <h2 class="section-title">Simulador Interactivo del Micro:bit</h2>
+        <p class="section-subtitle">
+          Pon a prueba el funcionamiento real del robot. Modifica los sensores ambientales de luz y temperatura, haz avanzar los días y presiona los botones A y B tal como lo haría el usuario en su hogar.
+        </p>
+
+        <div class="simulator-grid">
+          <!-- Controls Panel (Left) -->
+          <div class="sim-panel sim-controls">
+            <h3 class="panel-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="4" y1="21" x2="4" y2="14"></line>
+                <line x1="4" y1="10" x2="4" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12" y2="3"></line>
+                <line x1="20" y1="21" x2="20" y2="16"></line>
+                <line x1="20" y1="12" x2="20" y2="3"></line>
+                <line x1="1" y1="14" x2="7" y2="14"></line>
+                <line x1="9" y1="8" x2="15" y2="8"></line>
+                <line x1="17" y1="16" x2="23" y2="16"></line>
+              </svg>
+              Sensores del Entorno
+            </h3>
+
+            <!-- Light Slider -->
+            <div class="control-group">
+              <div class="control-label-row">
+                <label for="lightSlider">
+                  <strong>Sensor de Luz:</strong>
+                  <span id="lightBadge" class="badge-status">Normal</span>
+                </label>
+                <span class="value-display" id="lightValue">120 / 255</span>
+              </div>
+              <input type="range" id="lightSlider" min="0" max="255" value="120" class="sim-slider">
+              <div class="slider-hints">
+                <span>0 (Oscuridad/Sin Luz)</span>
+                <span class="threshold-marker">&le;20 Crítico</span>
+                <span>255 (Plena Luz)</span>
+              </div>
+            </div>
+
+            <!-- Temperature Slider -->
+            <div class="control-group">
+              <div class="control-label-row">
+                <label for="tempSlider">
+                  <strong>Sensor de Temperatura:</strong>
+                  <span id="tempBadge" class="badge-status">Confort</span>
+                </label>
+                <span class="value-display" id="tempValue">21 °C</span>
+              </div>
+              <input type="range" id="tempSlider" min="-5" max="45" value="21" class="sim-slider">
+              <div class="slider-hints">
+                <span class="threshold-marker">&lt;10°C Frío Extremo</span>
+                <span>20°C Confort</span>
+                <span class="threshold-marker">&gt;35°C Calor Extremo</span>
+              </div>
+            </div>
+
+            <!-- Fast-forward day counter simulation -->
+            <div class="control-group">
+              <div class="control-label-row">
+                <label>
+                  <strong>Días Acumulados en Carencia:</strong>
+                  <span id="daysCountBadge" class="badge-days">0 / 14 días</span>
+                </label>
+              </div>
+              <div class="sim-progress-bar">
+                <div class="sim-progress-fill" id="daysProgressBar" style="width: 0%;"></div>
+              </div>
+              <div class="days-actions">
+                <button type="button" class="btn btn-sm btn-outline" id="btnAdvance1Day">+1 Día Crítico</button>
+                <button type="button" class="btn btn-sm btn-outline" id="btnAdvance14Days">Completar 14 Días</button>
+                <button type="button" class="btn btn-sm btn-secondary" id="btnResetDays">Reiniciar Días</button>
+              </div>
+            </div>
+
+            <!-- Preset Scenarios -->
+            <div class="preset-scenarios">
+              <span class="presets-title">Escenarios de Prueba Rápidos:</span>
+              <div class="preset-buttons">
+                <button type="button" class="preset-btn" id="presetNormal">Condiciones Normales</button>
+                <button type="button" class="preset-btn alert-preset" id="presetWinter">Corte de Luz en Invierno</button>
+                <button type="button" class="preset-btn alert-preset" id="presetSummer">Ola de Calor sin Servicios</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Micro:bit Virtual Device (Right) -->
+          <div class="sim-panel sim-device-wrapper">
+            <div class="virtual-microbit-card">
+              <div class="device-telemetry-bar">
+                <div class="telemetry-item">
+                  <span class="telemetry-label">ESTADO DEL ROBOT:</span>
+                  <span class="telemetry-value" id="systemStatusText">MONITORIZANDO NORMAL</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="telemetry-label">LED ALARMA (P0):</span>
+                  <span class="led-indicator" id="pin0LedIndicator"></span>
+                </div>
+              </div>
+
+              <!-- Interactive SVG Microbit -->
+              <div class="microbit-svg-container">
+                <svg viewBox="0 0 460 360" class="microbit-svg" id="microbitSvg">
+                  <!-- Main Board Body -->
+                  <rect x="20" y="20" width="420" height="320" rx="40" fill="#1e1e24" stroke="#333" stroke-width="4"/>
+                  
+                  <!-- Verisure / Microbit Top Accents -->
+                  <path d="M50 20 L230 20 L230 50 L50 20 Z" fill="#e20613" opacity="0.9"/>
+                  <path d="M410 20 L230 20 L230 50 L410 20 Z" fill="#e20613" opacity="0.9"/>
+
+                  <!-- Gold edge connector tracks at the bottom -->
+                  <g class="edge-connector" fill="#c49b38">
+                    <rect x="35" y="300" width="40" height="40" rx="4"/>
+                    <rect x="85" y="315" width="10" height="25"/>
+                    <rect x="105" y="315" width="10" height="25"/>
+                    <rect x="125" y="300" width="40" height="40" rx="4"/>
+                    <rect x="175" y="315" width="10" height="25"/>
+                    <rect x="195" y="315" width="10" height="25"/>
+                    <rect x="215" y="300" width="40" height="40" rx="4"/>
+                    <rect x="265" y="315" width="10" height="25"/>
+                    <rect x="285" y="315" width="10" height="25"/>
+                    <rect x="305" y="300" width="40" height="40" rx="4"/>
+                    <rect x="355" y="315" width="10" height="25"/>
+                    <rect x="385" y="300" width="40" height="40" rx="4"/>
+                  </g>
+                  <text x="55" y="325" fill="#111" font-weight="bold" font-size="14">0</text>
+                  <text x="145" y="325" fill="#111" font-weight="bold" font-size="14">1</text>
+                  <text x="235" y="325" fill="#111" font-weight="bold" font-size="14">2</text>
+                  <text x="315" y="325" fill="#111" font-weight="bold" font-size="12">3V</text>
+                  <text x="398" y="325" fill="#111" font-weight="bold" font-size="12">GND</text>
+
+                  <!-- External Wire connection from Pin 0 to External LED -->
+                  <path d="M55 300 Q20 220 25 150" stroke="#e20613" stroke-width="4" fill="none" stroke-linecap="round"/>
+                  
+                  <!-- External Breadboard LED Representation -->
+                  <g class="external-led-group" transform="translate(10, 80)">
+                    <rect x="0" y="0" width="30" height="60" rx="6" fill="#2d3748" stroke="#4a5568"/>
+                    <circle cx="15" cy="20" r="10" id="svgPin0Led" class="sim-external-led off"/>
+                    <text x="15" y="48" fill="#e2e8f0" font-size="8" text-anchor="middle" font-weight="bold">LED P0</text>
+                  </g>
+
+                  <!-- 5x5 LED Matrix Grid Container -->
+                  <g id="ledMatrixGroup" transform="translate(160, 90)">
+                    <!-- 25 LEDs rendered dynamically by JS -->
+                  </g>
+
+                  <!-- Button A (Clickable) -->
+                  <g class="svg-button" id="svgBtnA" role="button" tabindex="0" aria-label="Presionar Botón A: Confirmar Necesidad">
+                    <rect x="60" y="140" width="48" height="48" rx="8" fill="#2a2a30" stroke="#555" stroke-width="2"/>
+                    <circle cx="84" cy="164" r="18" fill="#111" stroke="#444" stroke-width="2"/>
+                    <text x="84" y="171" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle">A</text>
+                    <text x="84" y="210" fill="#a0aec0" font-size="11" text-anchor="middle" font-weight="600">SÍ (Env.)</text>
+                  </g>
+
+                  <!-- Button B (Clickable) -->
+                  <g class="svg-button" id="svgBtnB" role="button" tabindex="0" aria-label="Presionar Botón B: Cancelar Alerta">
+                    <rect x="350" y="140" width="48" height="48" rx="8" fill="#2a2a30" stroke="#555" stroke-width="2"/>
+                    <circle cx="374" cy="164" r="18" fill="#111" stroke="#444" stroke-width="2"/>
+                    <text x="374" y="171" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle">B</text>
+                    <text x="374" y="210" fill="#a0aec0" font-size="11" text-anchor="middle" font-weight="600">NO (Cancel.)</text>
+                  </g>
+
+                  <!-- Logo BBC Micro:bit -->
+                  <text x="230" y="60" fill="#ffffff" font-size="18" font-weight="bold" letter-spacing="3" text-anchor="middle">micro:bit</text>
+                </svg>
+              </div>
+
+              <!-- Device Status Feed & Notification Bubble -->
+              <div class="simulation-terminal-log" id="simTerminalLog">
+                <span class="log-time">[00:00]</span> Sistema iniciado. Parámetros estables. Esperando lecturas...
+              </div>
+
+              <div class="user-action-prompter" id="userActionPrompt" style="display: none;">
+                <div class="prompt-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="#e20613">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.8 10-10S17.52 2 12 2zm-1 15h2v-2h-2v2zm0-4h2V7h-2v6z"/>
+                  </svg>
+                </div>
+                <div class="prompt-text">
+                  <strong>¡Alerta de Vulnerabilidad Activada!</strong> Se cumplieron 14 días sin servicios normales.
+                  <span>Presiona <strong>Botón A</strong> en el Micro:bit para solicitar cuadrilla de empleo, o <strong>Botón B</strong> para cancelar.</span>
+                </div>
+              </div>
+
+              <!-- Assistance confirmation banner -->
+              <div class="assistance-confirmed-banner" id="assistanceBanner" style="display: none;">
+                <div class="banner-badge-check">&check;</div>
+                <div>
+                  <h4>¡Confirmación Registrada Exitosamente!</h4>
+                  <p>El código <strong>"Env."</strong> ha sido despachado. Se notificó al Ministerio de Trabajo para articular entrevistas de formación y empleo digno en la vivienda.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: FREQUENT QUESTIONS & TRANSPARENCY (Verisure Style FAQ) -->
+    <section class="section faq-section" id="preguntas">
+      <div class="container">
+        <div class="section-badge">TRANSPARENCIA Y DUDAS FRECUENTES</div>
+        <h2 class="section-title">Preguntas Frecuentes sobre el Dispositivo</h2>
+        <p class="section-subtitle">
+          Todo lo que la comunidad necesita saber acerca de la privacidad, el consentimiento y el destino de las alertas.
+        </p>
+
+        <div class="faq-accordion">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>¿El dispositivo graba audio, conversaciones o video dentro del hogar?</span>
+              <span class="faq-toggle-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                <strong>No, categóricamente no.</strong> El Micro:bit cuenta exclusivamente con un sensor fotodetector analógico (mide niveles de luz ambiente de 0 a 255) y un termómetro interno del procesador. No contiene cámaras, micrófonos ni capacidad de registrar información personal o conversaciones de la familia.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>¿Qué ocurre si la familia se va de vacaciones o el corte de luz es temporal?</span>
+              <span class="faq-toggle-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                El algoritmo implementa una <strong>ventana temporal de 14 días continuos</strong>. Cortes aislados de pocas horas no activan la alarma. Incluso si se cumplen los 14 días por un viaje, la persona siempre tiene la potestad de presionar el <strong>Botón B</strong> al regresar, lo que muestra <code>"Cancel."</code> y resetea el contador inmediatamente sin consecuencias.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>¿Por qué se requiere apretar el Botón A o B?</span>
+              <span class="faq-toggle-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                El principio rector del proyecto escolar es el <strong>consentimiento soberano del usuario</strong>. Ningún organismo estatal ni programa social debe intervenir sin la validación explícita de los propios afectados, respetando su autonomía y dignidad ciudadana.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>¿Qué tipo de respuesta brinda el Ministerio de Trabajo?</span>
+              <span class="faq-toggle-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                El objetivo no es el asistencialismo pasivo, sino la formación de oficios y la inserción laboral. Se ofrecen talleres de oficios remunerados, programas de inserción laboral formal y conexión con bolsas de empleo productivo para restituir la estabilidad económica del hogar.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT & INQUIRY (Verisure Style Form) -->
+    <section class="section contact-section" id="contacto">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-info-col">
+            <span class="contact-tag">COMUNIDAD Y CONSULTAS</span>
+            <h2>¿Deseas implementar Micro:bit en tu municipio o escuela?</h2>
+            <p>
+              Ponte en contacto con nuestro equipo escolar del Colegio Fasta San Vicente de Paúl para acceder al código de MakeCode, esquemas de conexión y manuales de armado.
+            </p>
+
+            <div class="contact-channels">
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="channel-label">Instagram Oficial:</span>
+                  <a href="https://instagram.com/microweb.salta.ig" target="_blank" rel="noopener noreferrer" class="channel-val">@microweb.salta.ig</a>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="channel-label">Correo Electrónico:</span>
+                  <a href="mailto:microweb26@gmail.com" class="channel-val">microweb26@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="channel-label">Ubicación y Colegio:</span>
+                  <span class="channel-val">Colegio Fasta San Vicente de Paúl &bull; Salta, Argentina</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form (Right) -->
+          <div class="contact-form-col">
+            <form class="verisure-form" id="contactForm">
+              <h3>Solicitar Información o Asistencia</h3>
+              <p class="form-help">Completa tus datos para recibir asesoramiento o informes del proyecto.</p>
+
+              <div class="form-group">
+                <label for="formName">Nombre y Apellido</label>
+                <input type="text" id="formName" required placeholder="Ej: Marcela Gómez" class="form-control">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="formEmail">Correo Electrónico</label>
+                  <input type="email" id="formEmail" required placeholder="tuemail@ejemplo.com" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="formPhone">Teléfono / Celular</label>
+                  <input type="tel" id="formPhone" placeholder="+54 9 ..." class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="formInterest">Tipo de Consulta</label>
+                <select id="formInterest" class="form-control">
+                  <option value="implementacion">Implementación de Micro:bit en mi barrio</option>
+                  <option value="educativo">Uso pedagógico en otra institución</option>
+                  <option value="voluntariado">Apoyo o vinculación con empleo</option>
+                  <option value="otro">Otra consulta</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="formMessage">Mensaje</label>
+                <textarea id="formMessage" rows="3" placeholder="Escribe tu mensaje o consulta..." class="form-control"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-verisure btn-block" id="formSubmitBtn">
+                Enviar Solicitud
+              </button>
+
+              <div class="form-privacy-note">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                </svg>
+                Tus datos están protegidos bajo protocolos de confidencialidad y consentimiento.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (Exact Wireframe Match: @microweb.salta.ig, microweb26@gmail.com, footer info) -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-container">
+      
+      <!-- Top footer columns -->
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand & Wireframe Title -->
+        <div class="footer-col brand-col">
+          <div class="footer-logo">
+            <span class="brand-logo__dot red"></span>
+            <span class="footer-brand-title">MICROBIT</span>
+          </div>
+          <p class="footer-slogan">
+            Detección temprana de vulnerabilidad socioeconómica con consentimiento del usuario.
+          </p>
+          <div class="footer-wireframe-social">
+            <a href="https://instagram.com/microweb.salta.ig" target="_blank" rel="noopener noreferrer" class="social-wireframe-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span>@microweb.salta.ig</span>
+            </a>
+            <a href="mailto:microweb26@gmail.com" class="social-wireframe-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>microweb26@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links (matching wireframe) -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Secciones</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#problematica">Problemática e INDEC</a></li>
+            <li><a href="#proyecto">Proyecto y Sensores</a></li>
+            <li><a href="#instructivo">Instructivo y Protocolo</a></li>
+            <li><a href="#simulador">Simulador Interactivo</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Academic Credits from PDF -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Equipo Escolar</h4>
+          <ul class="footer-credits-list">
+            <li><strong>Colegio:</strong> Fasta San Vicente de Paúl</li>
+            <li><strong>Materia:</strong> Tecnología de la Información (TI)</li>
+            <li><strong>Profesora:</strong> Valentina Francesch</li>
+            <li><strong>Alumnas:</strong> Isabella Marino, Agustina Garcia y Lucia Matteucci</li>
+            <li><strong>Ciclo Lectivo:</strong> 2026 &bull; 4° año A</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: MakeCode & Technology -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Recursos MakeCode</h4>
+          <p class="footer-text-small">
+            Proyecto desarrollado con micro:bit v2 y MakeCode for Micro:bit.
+          </p>
+          <a href="https://makecode.microbit.org/_c4oE2JAb2X5e" target="_blank" rel="noopener noreferrer" class="btn btn-verisure-outline btn-sm">
+            Ver Proyecto MakeCode &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-copy">
+          &copy; 2026 Micro:bit Detección Temprana de Vulnerabilidad. Proyecto Escolar Integrador TI. Todos los derechos reservados.
+        </div>
+        <div class="footer-tags">
+          <span>Inspiración de Seguridad: Verisure</span>
+          <span>&bull;</span>
+          <span>Tecnología con Consentimiento</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
